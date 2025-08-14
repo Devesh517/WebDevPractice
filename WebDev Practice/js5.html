@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Extremes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border: 2px solid #4caf50;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #4caf50;
+    }
+
+    input {
+      padding: 10px;
+      width: calc(100% - 22px);
+      margin-bottom: 15px;
+      border: 1px solid #4caf50;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .output {
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Find Extremes</h1>
+    <input type="text" id="arrayInput" placeholder="Enter 10 numbers separated by commas">
+    <button onclick="displayExtremes()">Find Extremes</button>
+    <div class="output" id="output"></div>
+  </div>
+
+  <script>
+    function findExtremes(arr) {
+      if (arr.length < 6) {
+        return "Array must have at least 6 elements.";
+      }
+
+      // Sort the array in ascending order
+      const sortedArray = [...arr].sort((a, b) => a - b);
+
+      // Find the first, second, and third lowest numbers
+      const firstLowest = sortedArray[0];
+      const secondLowest = sortedArray[1];
+      const thirdLowest = sortedArray[2];
+
+      // Find the first, second, and third greatest numbers
+      const firstGreatest = sortedArray[sortedArray.length - 1];
+      const secondGreatest = sortedArray[sortedArray.length - 2];
+      const thirdGreatest = sortedArray[sortedArray.length - 3];
+
+      return {
+        lowest: [firstLowest, secondLowest, thirdLowest],
+        greatest: [thirdGreatest, secondGreatest, firstGreatest],
+      };
+    }
+
+    function displayExtremes() {
+      const input = document.getElementById("arrayInput").value;
+      const output = document.getElementById("output");
+
+      if (!input) {
+        output.textContent = "Please enter a valid array.";
+        return;
+      }
+
+      const array = input.split(",").map(Number);
+      const result = findExtremes(array);
+
+      if (typeof result === "string") {
+        output.textContent = result;
+      } else {
+        output.innerHTML = `<strong>Lowest three numbers:</strong> ${result.lowest.join(", ")}<br>
+                            <strong>Greatest three numbers:</strong> ${result.greatest.join(", ")}`;
+      }
+    }
+  </script>
+</body>
+</html>
