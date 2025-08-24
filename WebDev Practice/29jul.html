@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        html{scroll-behavior: smooth;}
+        body{margin: 0%; padding: 0%; overflow-x: hidden; background-color: rgb(252, 251, 250); }
+        .main{width: 100%; height: 100%;}
+        .box{background-color: rgb(208, 193, 235); width: 100%; height: 200vh;}
+        .container{  margin: 0%; padding: 0%; width: 100%;}
+        .container h1{padding: 0%; margin: 0%; text-align: center;}
+        .container p{padding-left: 7.5rem; padding-right: 7.5rem; text-align: justify;}
+        .nav{text-align: center; display: flex; justify-content: space-around;
+            background-color: rgb(203, 227, 239); height: 10vh; padding-top: 1rem; position: sticky;}
+        .nav div a{text-decoration: none;}
+        .top{background-color: rgb(119, 119, 145); border-radius: 50%; position: fixed; right: 25px; bottom: 25px; width: 30px;
+            text-align: center; margin-right: 30px;   }
+        .top a{text-decoration: none; }
+        @media (max-width: 800px) {
+            .nav{flex-direction: column; gap: 5px; height: 15vh;}
+            .container{margin: 0%; padding: 0%; overflow: hidden;}
+            .container h1{font-size: 45px;}
+            .container p{ padding-left: 5rem; padding-right: 5rem; text-align: justify; font-size: 40px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div><a href="#vd">Video Editing</a></div>
+            <div><a href="#gd">Graphic Design</a></div>
+            <div><a href="#id">Interior Design</a></div>
+            <div><a href="#wd">Web Development</a></div>
+        </div>
+        <div class="box">
+            <div class="container" id="vd">
+                <h1>Video Editing</h1>
+                <p>Video editing is the process of telling a story by cutting, arranging, and organizing 
+                    digital footage to create compelling video content. By combining various elements, 
+                    such as sound, raw footage, and dialogue, a video editor can successfully create 
+                    content that aligns with a director, producer, or company’s vision. Video editing 
+                    takes many different forms, from creative projects to video marketing. Learn about 
+                    these facets of the profession and discover the tools and skills necessary to start 
+                    in the field.Editors work on long-form content like films and television and short-form 
+                    content like marketing videos, client presentations, and social media posts. By assembling
+                    media pieces, editors influence audiences and public opinions through art, design, precision, 
+                    and communication.</p>
+            </div>
+            <div class="container" id="gd">
+                <h1>Graphics</h1>
+                <p>Graphic design is a profession, academic discipline and applied art that involves 
+                    creating visual communications intended to transmit specific messages to social groups, with 
+                    specific objectives. Graphic design is an interdisciplinary branch of design and of the fine arts. 
+                    Its pract   ice involves creativity, innovation and lateral thinking using manual or digital tools, where 
+                    it is usual to use text and graphics to communicate visually.The role of the graphic designer in the communication 
+                    process is that of the encoder or interpreter of the message. They work on the interpretation, ordering, and 
+                    presentation of visual messages. In its nature, design pieces can be philosophical, aesthetic, emotional and political.
+                    Usually, graphic design uses the aesthetics of typography and the compositional arrangement of the text, ornamentation, 
+                    and imagery to convey ideas, feelings, and attitudes beyond what language alone expresses. The design work can be based on a 
+                    customer's demand, a demand that ends up being established linguistically, either orally or in writing, that is, that graphic 
+                    design transforms a linguistic message into a graphic manifestation.</p>
+            </div>
+            <div class="container" id="id">
+                <h1>Interior Design</h1>
+                <p>Interior design is the art and science of enhancing the interior of a building to achieve a 
+                    healthier and more aesthetically pleasing environment for the people using the space. With a keen eye 
+                    for detail and a creative flair, an interior designer is someone who plans, researches, coordinates, and 
+                    manages such enhancement projects. Interior design is a multifaceted profession that includes conceptual development, 
+                    space planning, site inspections, programming, research, communicating with the stakeholders of a project, construction 
+                    management, and execution of the design.The pursuit of effective use of space, user well-being and functional design has 
+                    contributed to the development of the contemporary interior design profession. The profession of interior design is 
+                    separate and distinct from the role of interior decorator, a term commonly used in the US; the term is less common in the
+                    UK, where the profession of interior design is still unregulated and therefore, strictly speaking, not yet officially a 
+                    profession.In ancient India, architects would also function as interior designers. This can be seen from the references of 
+                    Vishwakarma the architect—one of the gods in Indian mythology. In these architects' design of 17th-century Indian homes, 
+                    sculptures depicting ancient texts and events are seen inside the palaces, while during the medieval times wall art 
+                    paintings were a common feature of palace-like mansions in India commonly known as havelis. While most traditional homes 
+                    have been demolished to make way to modern buildings, there are still around 2000 havelis[2] in the Shekhawati region 
+                    of Rajasthan that display wall art paintings.</p>
+            </div>
+            <div class="container" id="wd">
+                <h1>Web Development</h1>
+                <p>Web development is the process of creating, building, and maintaining websites and web applications. It involves 
+                    everything from web design to programming and database management. Web development is generally divided into three 
+                    core areas: Frontend Development, Backend Development, and Full Stack Development.For larger organizations and businesses, 
+                    Web development teams can consist of hundreds of people (Web developers) and follow standard methods like Agile 
+                    methodologies while developing Web sites. Smaller organizations may only require a single permanent or contracting 
+                    developer, or secondary assignment to related job positions such as a graphic designer or information systems technician. 
+                    Web development may be a collaborative effort between departments rather than the domain of a designated department. 
+                    There are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer. 
+                    Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal 
+                    with the servers. Since the commercialization of the Web, the industry has boomed and has become one of the most used technologies ever</p>
+            </div>
+        </div>
+        <div class="top"><a href="#">T</a></div>
+    </div>
+</body>
+</html>

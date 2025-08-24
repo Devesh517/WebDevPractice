@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{box-sizing: border-box; }
+      .main h1{text-align: center; margin: 0%; padding: 0%;}
+      body{margin: 0%; padding: 0%; background-color: rgb(41, 215, 221); display: flex;}
+      .container{display: flex; justify-content: center; margin: 5px;}
+      .container img{ height: 45vh; width: 45vh;  margin: 5px; border:5px  black solid; border-radius: 10px;}
+      @media (max-width: 800px) {
+        .container{  flex-direction: column;}
+       .container img{height: 55vh; width: 55vh; }
+       .main h1{font-size: 50px;}
+      }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Image Gallery</h1>
+        <div class="container">
+            <img src="images/img1.jpg" alt="">
+            <img src="images/img2.jpg" alt="">
+            <img src="images/img3.jpg" alt="">
+            <img src="images/img4.jpg" alt="">
+            <img src="images/img5.jpg" alt="">
+        </div>
+                <div class="container">
+            <img src="images/img6.jpg" alt="">
+            <img src="images/img7.jpg" alt="">
+            <img src="images/img8.jpg" alt="">
+            <img src="images/img9.jpg" alt="">
+            <img src="images/img10.jpg" alt="">
+        </div>
+                <div class="container">
+            <img src="images/img5.jpg" alt="">
+            <img src="images/img4.jpg" alt="">
+            <img src="images/img3.jpg" alt="">
+            <img src="images/img2.jpg" alt="">
+            <img src="images/img1.jpg" alt="">
+        </div>
+                <div class="container">
+            <img src="images/img10.jpg" alt="">
+            <img src="images/img9.jpg" alt="">
+            <img src="images/img8.jpg" alt="">
+            <img src="images/img7.jpg" alt="">
+            <img src="images/img6.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+<!-- <script>
+    const section =document.getElementById('section');
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 100) {
+            section.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+        } else {
+            section.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+        }
+    });
+</script> -->
+</html>

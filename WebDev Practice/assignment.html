@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{box-sizing: border-box;}
+    body{margin: 0%; padding: 0%;}
+    .list{display: flex; text-align: center; justify-content: space-between; 
+        background-color: rgb(158, 51, 136); margin: 0%; padding: 0%; height: 7vh;}
+    .list li{list-style: none; cursor: pointer;}
+    .list li a{text-decoration: none; color: rgb(190, 183, 196);}
+    .sectiom2{height: 200vh; width: 100%;}
+    .section2 iframe{height: 100vh; width: 100%; overflow: hidden;}
+    @media (max-width: 800px) {
+        .list{flex-direction: column; height: 15vh; gap: 10px; padding-top: 10px;}
+        .list li a{font-size: 20px;}
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="section1">
+            <nav class="Nav">
+                <ul class="list">
+                    <li><a href="card.html" target="iframe">GITHUB</a></li>
+                    <li><a href="gallery.html" target="iframe">INSTAGRAM</a></li>
+                    <li><a href="29jul.html" target="iframe">LINKEDIN</a></li>
+                    <li><a href="marque.html" target="iframe">HACKERRANK</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="section2">
+            <iframe src="" frameborder="0" name="iframe"></iframe>
+        </div>
+    </div>
+</body>
+</html>

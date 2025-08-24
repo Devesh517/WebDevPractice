@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .main
+        {
+        display: flex; justify-content: center;
+        align-items: center;height: 100vh;
+        }
+        .content
+        {
+        display: flex; align-items: center; width: 600px;height: 50vh;
+        justify-content: center;
+        }
+        .sub1
+        {
+        align-items: center;height: 100%;width: 40%;  background: linear-gradient(to right, #4e54c8, #8f94fb);
+        justify-content: center; display: flex; flex-direction: column; border-radius: 7px 0px 0 7px;
+        }
+        .sub1 button
+        {
+        height: 30px; width: 180px; border-radius: 4px;
+        margin: 10px; color: white; border: none;
+        }
+        #bt1
+        {
+        background-color: #510bf4;
+        }
+        #bt2
+        {
+        background-color:#1f95ef;
+        }
+        #bt3
+        {
+        background-color: #da1717;
+        }
+        .sub2
+        {
+        align-items: center;  background: linear-gradient(to right, #74ebd5, #acb6e5);
+        justify-content: center;height: 100%;width: 60%; border-radius: 0 7px 7px 0px;
+        }
+        .sub2 h3
+        {
+        text-align: center;
+        }
+        .sub2 p
+        {
+        text-align: center;
+        }
+        .sub2 p a
+        {
+        text-decoration: none;
+        }
+        .part
+        {
+        display: flex;
+        }
+        .pt1
+        {
+            display: flex;
+        }
+        .pt1 input
+        {
+        border-style: none;
+        }
+        .pt2
+        {
+            margin-left: 90px; color: blue;
+            cursor: pointer;
+        }
+        .inp
+        {
+        width: 180px; border: none; border-radius: 5px;
+        flex-direction: column; display: flex; height: 25px; margin: 10px;
+        }
+        .sub2 button
+        {
+            margin: 10px; margin-left: 40px; color: white;
+            width: 250px; height: 30px; border-radius: 5px;
+            border-style: none; background-color: rgb(35, 35, 163);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+        <div class="sub1">
+            <button id="bt1">SignIn with Facebook</button>
+            <button id="bt2">SignIn with Twitter</button>
+            <button id="bt3">SignIn with Google</button>
+        </div>
+        <div class="sub2">
+            <h3>Login to your Account</h3>
+            <input type="text" placeholder="Email" class="inp">
+            <input type="password" placeholder="Password" class="inp">
+            <div class="part">
+                <div class="pt1"><input type="checkbox" placeholder="Remember Me"><p>Remember Me</p></div>
+                <div class="pt2"><p>Forgot Password?</p></div>
+            </div>
+            <button>Login with Email</button>
+            <p>Don't you have an account? <a href="">SignUp?</a></p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
